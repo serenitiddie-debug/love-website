@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For You ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background: linear-gradient(135deg,#ffb6c1,#ffd6e7,#ffeef5);
+      color:#fff;
+      overflow-x:hidden;
+    }
+
+    .container{
+      width:100%;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:40px 20px;
+    }
+
+    .card{
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(12px);
+      border:1px solid rgba(255,255,255,0.2);
+      border-radius:30px;
+      padding:40px;
+      max-width:700px;
+      width:100%;
+      box-shadow:0 10px 30px rgba(0,0,0,0.15);
+      animation:fadeIn 1.5s ease;
+    }
+
+    h1{
+      font-size:3rem;
+      margin-bottom:10px;
+    }
+
+    .subtitle{
+      font-size:1.1rem;
+      opacity:0.9;
+      margin-bottom:30px;
+    }
+
+    .heart{
+      font-size:4rem;
+      animation:heartbeat 1.5s infinite;
+      margin-bottom:20px;
+    }
+
+    .message{
+      font-size:1.1rem;
+      line-height:1.8;
+      margin-bottom:30px;
+    }
+
+    .reasons{
+      text-align:left;
+      margin-top:20px;
+    }
+
+    .reasons h2{
+      margin-bottom:15px;
+      text-align:center;
+    }
+
+    .reasons ul{
+      list-style:none;
+    }
+
+    .reasons li{
+      background:rgba(255,255,255,0.12);
+      padding:12px;
+      border-radius:15px;
+      margin-bottom:10px;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:25px;
+      padding:14px 28px;
+      border-radius:50px;
+      background:#fff;
+      color:#ff5c8a;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:scale(1.05);
+      background:#ffe4ee;
+    }
+
+    .floating-hearts span{
+      position:fixed;
+      bottom:-50px;
+      color:rgba(255,255,255,0.7);
+      animation:float 10s linear infinite;
+      font-size:20px;
+    }
+
+    @keyframes heartbeat{
+      0%{transform:scale(1);}
+      25%{transform:scale(1.1);}
+      50%{transform:scale(1);}
+      75%{transform:scale(1.1);}
+      100%{transform:scale(1);}
+    }
+
+    @keyframes float{
+      0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:1;
+      }
+      100%{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+      }
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(20px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    footer{
+      margin-top:30px;
+      font-size:0.9rem;
+      opacity:0.8;
+    }
+
+    @media(max-width:600px){
+      h1{
+        font-size:2.2rem;
+      }
+
+      .card{
+        padding:25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="floating-hearts">
+    <span style="left:10%; animation-delay:0s;">❤️</span>
+    <span style="left:25%; animation-delay:2s;">💕</span>
+    <span style="left:40%; animation-delay:4s;">💖</span>
+    <span style="left:60%; animation-delay:1s;">❤️</span>
+    <span style="left:75%; animation-delay:3s;">💘</span>
+    <span style="left:90%; animation-delay:5s;">💕</span>
+  </div>
+
+  <div class="container">
+    <div class="card">
+
+      <div class="heart">❤️</div>
+
+      <h1>For My Favorite Person</h1>
+
+      <p class="subtitle">
+        A little website made just for you ✨
+      </p>
+
+      <div class="message">
+        Thank you for making my days brighter, my laughs louder,
+        and my life happier. No matter what happens,
+        you’ll always be special to me.
+      </div>
+
+      <div class="reasons">
+        <h2>Reasons Why You're Amazing</h2>
+
+        <ul>
+          <li>🌸 Your smile makes everything better</li>
+          <li>🎧 You make boring moments fun</li>
+          <li>✨ You're always memorable</li>
+          <li>💖 You make me feel comfortable</li>
+          <li>🌙 Talking to you is my favorite part of the day</li>
+        </ul>
+      </div>
+
+      <a class="btn" href="#">
+        Forever & Always ❤️
+      </a>
+
+      <footer>
+        Made with love ✨
+      </footer>
+
+    </div>
+  </div>
+
+</body>
+</html>
